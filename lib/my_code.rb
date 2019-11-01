@@ -32,5 +32,3 @@ def reduce(source_array, starting_point=nil)
   #source_array.map do |item|
   #  sum=yield(sum,item)
   #end
-  #sum
-end
