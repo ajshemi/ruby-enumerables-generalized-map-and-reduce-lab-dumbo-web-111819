@@ -10,8 +10,19 @@ def map(source_array)
 end
 
 
-def reduce(source_array, starting_point=0)
-  sum=starting_point
+#def reduce(source_array, starting_point=0)
+#  sum=starting_point
+#  source_array.map do |item|
+#    sum=yield(sum,item)
+#  end
+#  sum
+#end
+def reduce(source_array, starting_point=nil)
+  if starting_point==nil 
+    sum=0 
+  else
+    sum=starting_point
+  end  
   source_array.map do |item|
     sum=yield(sum,item)
   end
