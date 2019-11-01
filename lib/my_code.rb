@@ -22,7 +22,8 @@ def reduce(source_array, starting_point=nil)
     sum=0 
   else
     sum=starting_point
-  end  
+  end 
+  
   source_array.map do |item|
     sum=yield(sum,item)
   end
