@@ -19,11 +19,12 @@ end
 #end
 def reduce(source_array, starting_point=nil)
   if starting_point==nil 
-    sum=0 
+    sum=source_array[0]
+    i=1
   else
     sum=starting_point
+    i=0
   end 
-  i=0 
   while i<source_array.length do
     sum=yield(sum,source_array[i])
     i+=1
