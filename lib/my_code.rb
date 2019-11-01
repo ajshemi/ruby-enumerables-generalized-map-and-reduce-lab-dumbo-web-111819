@@ -26,6 +26,7 @@ def reduce(source_array, starting_point=nil)
   i=0 
   while i<source_array.length do
     sum=yield(sum,source_array[i])
+    i+=1
   end
   sum
   #source_array.map do |item|
